@@ -6,6 +6,8 @@ let button = document.getElementById("button");
 
 async function getMeme() {
   try {
+    // https://github.com/D3vd/Meme_Api
+
     const meme = await fetch("https://meme-api.com/gimme/wholesomememes");
     const res = await meme.json();
     return res;
